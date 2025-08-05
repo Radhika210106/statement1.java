@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+        
+        System.out.println("Enter the number for i:");
+        int K = data.nextInt();
+        
+        System.out.println("Enter the number for j:");
+        int M = data.nextInt();
+        
+        for (int i = 1; i <= K; i++) {
+            System.out.println("Outer loop: " + i);
+            
+            for (int j = 1; j <= M; j++) {
+                System.out.println("  Inner loop: " + j);
+            }
+        }
+        
+        data.close();
+    }
+}
