@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+
+        System.out.println("Enter number of elements: ");
+        int length = x.nextInt();  
+        String[] arr = new String[length];
+
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < length; i++) {   
+            arr[i] = x.next();  
+        }
+
+        
+        for (String num : arr) {
+            System.out.println(num);
+        }
+
+       
+        for (int i = 0; i < length; i++) {
+             if(arr[i].equals("priya")){
+                arr[i]="joe";
+             
+            }
+        }
+
+        
+        System.out.println("After modification:");
+        for (String num : arr) {
+            System.out.println(num);
+        }
+        
+
+        x.close();
+    }
+}
