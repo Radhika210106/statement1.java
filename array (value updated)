@@ -1,0 +1,15 @@
+class Main {
+    public static void main(String[] args) {
+        int i;
+        String[] array={"radhi","priya","gv"};
+        for(i=0;i<array.length;i++){
+            if(array[i]=="priya"){
+                array[i]="joe";
+            
+            System.out.println("updated value"+" "+array[i]);
+            }
+            
+        System.out.println(array[i]);
+        }
+    }
+}
