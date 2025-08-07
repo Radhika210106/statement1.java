@@ -1,3 +1,4 @@
+code 1:
 import java.util.Scanner;
 
 class Main {
@@ -22,3 +23,46 @@ Enter the starting number:
 Enter the ending number:
 45
 Random number:79
+code 2:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+        
+        while (true) {
+            System.out.print("Enter a number:  ");
+            int number = data.nextInt();
+            
+            int original = number;
+            
+            while (number % 2 == 0) {
+                number /= 2;
+            }
+            while (number % 3 == 0) {
+                number /= 3;
+            }
+            while (number % 5 == 0) {
+                number /= 5;
+            }
+            
+            if (number == 1) {
+                System.out.println(original + " is an ugly number");
+            } else {
+                System.out.println(original + " is not an ugly number");
+            }
+        }
+        
+       
+    }
+}
+output:
+Enter a number:  3
+3 is an ugly number
+Enter a number:  5
+5 is an ugly number
+Enter a number:  8
+8 is an ugly number
+Enter a number:  7
+7 is not an ugly number
+Enter a number:  
