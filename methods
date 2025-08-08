@@ -137,3 +137,39 @@ public void sample(){
 }
 output:
 10
+code:
+ class Sample {
+    public int add(int x, int y) {
+        return x + y;
+    }
+}
+
+class Trio {
+    public void add(int x, int y) {
+        System.out.println(x + y);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Sample sampleObj = new Sample();
+        Trio trioObj = new Trio();
+
+    
+        int sum = sampleObj.add(5, 8);
+        System.out.println("Sum from Sample:");
+
+        
+        trioObj.add(5, 8);
+    }
+}
+output:
+Sum from Sample:
+13
+
+
+
+
+
+
+
