@@ -1,0 +1,30 @@
+code1:
+import java.util.Scanner;    
+class Main {
+    
+        public static void myMethod(){
+            System.out.println("radhi");
+        }
+    
+    public static void main(String []args){
+        myMethod();
+    }
+}
+output:
+radhi
+
+code 2:
+ 
+import java.util.Scanner;    
+class Main {
+    
+        public static void myMethod(String fname,String lname,int age,double height,double weight){
+            System.out.println(fname+ " "+lname+" "+age+" "+height+" "+weight);
+        }
+    
+    public static void main(String []args){
+        myMethod("radhi","S",19,5.2,40);
+    }
+}
+    output:
+      radhi S 19 5.2 40.0
