@@ -256,3 +256,26 @@ The matrix is:
 10 11 12 
 13 14 15 
 16 17 18 
+code 10:
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList<int[]> X = new ArrayList<int[]>();
+    
+    X.add(new int[]{1, 2, 3});
+    X.add(new int[]{4, 5, 6});
+    X.add(new int[]{7, 8, 9});
+    X.add(new int[]{10, 11, 12});
+    X.remove(2);
+    for (int[] arr : X) {
+      System.out.println(Arrays.toString(arr));
+    }
+  } 
+}
+output:
+[1, 2, 3]
+[4, 5, 6]
+[10, 11, 12]
+
