@@ -278,24 +278,3 @@ output:
 [1, 2, 3]
 [4, 5, 6]
 [10, 11, 12]
-code11:
- class Main {
-    public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4,5};
-        int a = 1;
-        int b = 4;
-        int[] sub = new int[b - a];
-
-        for (int i = a; i < b; i++) {
-            sub[i - a] = arr[i];
-        }
-
-        for (int x : sub) {
-            System.out.println(x); 
-        }
-    }
-}
-output:
-2
-3
-4
