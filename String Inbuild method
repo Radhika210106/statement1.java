@@ -56,3 +56,34 @@ Enter second string:
 raddhi
 Code point : 5
 Comparison : 4
+code 3:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter first string:");
+        String first = sc.nextLine();
+
+        System.out.println("Enter second string:");
+        String second = sc.nextLine();
+
+        
+        int comparecase = first.compareToIgnoreCase(second);
+
+        String concatcase = second.concat(first);
+
+        System.out.println("Code point : " + comparecase);
+        System.out.println("Comparison : " + concatcase);
+
+        sc.close();
+    }
+}
+output:
+Enter first string:
+radhika
+Enter second string:
+jevigaa
+Code point : 8
+Comparison : jevigaaradhika
