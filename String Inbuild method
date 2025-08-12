@@ -118,4 +118,35 @@ Enter second string:
 rad
 Code point : true
 Comparison : false
+code 5:
+import java.util.*;
 
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String data = "radhi";
+        String Hi="Hi %s my age  is %d";
+        System.out.println(data.equalsIgnoreCase(Hi));
+        System.out.printf(Hi,"radhi",21);
+        
+    }
+}
+output:
+false
+Hi radhi my age  is 21
+code 6:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        char[] data = {'r', 'a', 'd', 'h', 'i'};
+        String str =" ";
+        str = str.copyValueOf(data, 0, 5);
+        System.out.println(str.endsWith("h"));
+        System.out.println(str);
+        scanner.close();
+    }
+}
+output:
+false
+radhi
