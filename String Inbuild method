@@ -232,10 +232,13 @@ class Main {
         
         String x ="Hello world";
        System.out.println(x.indexOf("world")); 
+System.out.println(x.isEmpty()); 
+        
+
     }
 }
 output:
 6
-
+false
 
 
