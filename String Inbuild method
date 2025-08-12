@@ -25,3 +25,34 @@ Radhika
 one: R
 two: 104
 three: 104
+code 2:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter first string:");
+        String first = sc.nextLine();
+
+        System.out.println("Enter second string:");
+        String second = sc.nextLine();
+
+        
+        int codePointCount = first.codePointCount(0, first.length());
+
+        int comparisonResult = first.compareTo(second);
+
+        System.out.println("Code point  " + codePointCount);
+        System.out.println("Comparison : " + comparisonResult);
+
+        sc.close();
+    }
+}
+output:
+Enter first string:
+radhi
+Enter second string:
+raddhi
+Code point : 5
+Comparison : 4
