@@ -150,3 +150,37 @@ class Main {
 output:
 false
 radhi
+code7:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter your name:");
+        String name = sc.nextLine();
+        
+        System.out.println("Enter your age:");
+        int age = sc.nextInt();
+        
+        String t1= "Hi %s, my age is %d";
+        
+        System.out.printf(t1, name, age);
+        
+        sc.close();
+    }
+}
+output:
+Enter your name:
+radhi
+Enter your age:
+19
+Hi radhi, my age is 19
+
+
+
+
+
+
+
+
