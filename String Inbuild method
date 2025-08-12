@@ -176,8 +176,27 @@ radhi
 Enter your age:
 19
 Hi radhi, my age is 19
+code8:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        
+        char[] data = {'9', '3', '0', '1', '4','5','6','7','8'};
+    
+    
+        System.out.println(data);
+        
+        String mystring ="radhi";
+        mystring.getChars(0,5,data,4);
+        
+        System.out.println(data);
+    
+    }
+}
 
-
+output:
+930145678
+9301radhi
 
 
 
