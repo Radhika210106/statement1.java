@@ -87,3 +87,35 @@ Enter second string:
 jevigaa
 Code point : 8
 Comparison : jevigaaradhika
+code 4:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter first string:");
+        String first = sc.nextLine();
+
+        System.out.println("Enter second string:");
+        String second = sc.nextLine();
+
+        
+        boolean con = first.contains(second);
+
+        boolean coneq = second.contentEquals(first);
+
+        System.out.println("Code point : " + con);
+        System.out.println("Comparison : " + coneq);
+
+        sc.close();
+    }
+}
+output:
+Enter first string:
+radhi
+Enter second string:
+rad
+Code point : true
+Comparison : false
+
