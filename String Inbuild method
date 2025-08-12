@@ -197,8 +197,34 @@ class Main {
 output:
 930145678
 9301radhi
-
-
+code9:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        
+        String mystring ="radhi";
+        byte[] name=mystring.getBytes();
+        
+        System.out.println(name[1]);
+    
+    }
+}
+output:
+97
+code10:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        
+        String mystring ="radhi";
+        byte[] name=mystring.getBytes();
+        
+        System.out.println(name.hashCode());
+    
+    }
+}
+output:
+1704856573
 
 
 
