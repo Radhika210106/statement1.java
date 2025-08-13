@@ -333,3 +333,21 @@ System.out.println(x.startsWith("he"));
 output:
 true
 false
+//code 16:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        String x ="radhikasaravanan";
+
+        
+        String sub=x.substring(0,7);
+        String sub1=x.substring(7);
+        System.out.println(sub+" "+sub1);
+    }
+}
+output:
+radhika saravanan
