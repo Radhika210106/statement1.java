@@ -366,3 +366,29 @@ class Main {
 }
 iutput:
 'r' 'a' 'd' 'h' 'i' 'k' 'a' 
+//code 18:
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         System.out.print("name: ");
+        String x = sc.nextLine();
+        String upper = x.toUpperCase();
+        System.out.println("Uppercase: " + upper);
+        String lower = x.toLowerCase();
+        System.out.println("Lowercase: " + lower);
+        String str = x.toString();
+        System.out.println("String: " + str);
+        char[] y = x.toCharArray();
+        System.out.print("Characters: ");
+        for (char ch : y) {
+            System.out.print("'" + ch + "' ");
+        }
+    }
+}
+output:
+name: radhi
+Uppercase: RADHI
+Lowercase: radhi
+String: radhi
+Characters: 'r' 'a' 'd' 'h' 'i' 
