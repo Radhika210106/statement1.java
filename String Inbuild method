@@ -392,3 +392,21 @@ Uppercase: RADHI
 Lowercase: radhi
 String: radhi
 Characters: 'r' 'a' 'd' 'h' 'i' 
+//code 19:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         System.out.print("name: ");
+        String x = sc.nextLine();
+        System.out.println(x);
+        System.out.println(x.trim());
+        System.out.println(String.valueOf(true));
+    }
+}
+output:
+name: radhi
+radhi
+radhi
+true
