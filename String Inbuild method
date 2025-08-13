@@ -318,3 +318,18 @@ output:
 name: hello radhii
 hello
 radhii
+//code 15:
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String x ="Hello world";
+       System.out.println(x.startsWith("Hello"));
+       
+System.out.println(x.startsWith("he")); 
+}
+}
+output:
+true
+false
