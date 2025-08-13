@@ -260,6 +260,24 @@ true
 true
 false
 false
+//code 12:
 
 
+class Main {
+    public static void main(String[] args) {
+        String x="hello";
+        String y="hello radhi hello";
+        System.out.println(x.replace('l','p'));
+         String a="hello";
+        
+        System.out.println(y.replaceAll(a,"hi"));
+       String b="hello";
+               System.out.println(y.replaceFirst(b,"hey"));
+       
+    }
+}
 
+output:
+heppo
+hi radhi hi
+hey radhi hello
