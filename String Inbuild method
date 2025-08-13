@@ -298,3 +298,23 @@ class Main {
 output:
 hello
 radhi
+//code 14:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("name: ");
+        String data = sc.nextLine();
+        String  P = "[,\\ .\\s]";
+        String [] z= data.split(P);
+        for(String s:z){
+       System.out.println(s);
+            
+        }
+        
+    }
+}
+output:
+name: hello radhii
+hello
+radhii
