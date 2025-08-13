@@ -281,3 +281,20 @@ output:
 heppo
 hi radhi hi
 hey radhi hello
+//code13:
+
+
+class Main {
+    public static void main(String[] args) {
+        String x="hello radhi";
+       String y="[,\\.\\s]";
+       String[]z=x.split(y);
+       for(String s:z){
+           System.out.println(s);
+       }
+       
+    }
+}
+output:
+hello
+radhi
