@@ -199,4 +199,37 @@ output:
 this is wheeler
 this is fourwheeler
 this is car
+code 6:
+import java.util.Scanner;
+
+class grandparents{
+    grandparents() {
+        System.out.println("thaatha");
+    }
+}
+
+class cousins extends grandparents{
+    cousins() {
+        System.out.println("cousin");
+    }
+}
+
+class  daughter  extends cousins{
+    daughter() {
+        System.out.println("myself radhi");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        daughter obj = new daughter();
+
+      
+    }
+}
+output:
+thaatha
+cousin
+myself radhi
 
