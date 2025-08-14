@@ -83,3 +83,63 @@ narayanan
 kalaiselvi
 saravanan
 chandra
+code 3:
+import java.util.Scanner;
+
+class grandparents {
+    String name;
+
+    grandparents(String name) {
+        this.name = name;
+    }
+    void sound() {
+        System.out.println(name);
+    }
+}
+class grandfather extends grandparents {
+    grandfather(String name) {
+        super(name);
+    }
+}
+class grandmother extends grandparents {
+    grandmother(String name) {
+        super(name);
+    }
+}
+class father extends grandparents {
+    father(String name) {
+        super(name);
+    }
+}
+class mother extends grandparents {
+    mother(String name) {
+        super(name);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter grandfather name: ");
+        grandparents f1 = new grandfather(sc.nextLine());
+        System.out.print("Enter grandmother name: ");
+         grandparents f2 = new grandmother(sc.nextLine());
+        System.out.print("Enter father name: ");
+        grandparents f3 = new father(sc.nextLine());
+        System.out.print("Enter mother name: ");
+         grandparents f4 = new mother(sc.nextLine());
+        f1.sound();
+        f2.sound();
+        f3.sound();
+        f4.sound();
+        sc.close();
+    }
+}
+output:
+Enter grandfather name: nayarayanan
+Enter grandmother name: kalaiselvi
+Enter father name: saravanan
+Enter mother name: chandra
+nayarayanan
+kalaiselvi
+saravanan
+chandra
