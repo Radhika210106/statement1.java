@@ -1,3 +1,19 @@
+//syntax
+switch(variable){
+case 1:
+//code
+break;
+case 2:
+//code
+break;
+case 3:
+//code
+break;
+default
+break;
+}
+
+//code
 import java.util.Scanner;
 
 public class Main {
