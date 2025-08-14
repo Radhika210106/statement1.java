@@ -232,4 +232,36 @@ output:
 thaatha
 cousin
 myself radhi
+code 7:
+class Grandparents {
+    Grandparents() {
+        System.out.println("thaatha");
+    }
+}
+
+class Cousins extends Grandparents {
+    Cousins() {
+        System.out.println("cousin");
+    }
+}
+
+class Daughter extends Grandparents {
+    Daughter() {
+        System.out.println("my self radhuu");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Cousins cousinObj = new Cousins();
+        Daughter daughterObj = new Daughter();
+    }
+}
+output:
+thaatha
+cousin
+thaatha
+my self radhuu
+
+
 
