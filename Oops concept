@@ -1,0 +1,85 @@
+code 1:
+class Cars {
+    void sound(){
+        System.out.println("cars make a sound");
+    }
+}
+class BMW extends Cars{
+     void sound(){
+        System.out.println("BMW");
+     }
+}
+class Audi extends Cars{
+     void sound(){
+        System.out.println("Audi");
+     }
+}
+class Benz extends Cars{
+     void sound(){
+        System.out.println("Benz");
+     }
+}
+class Main {
+    public static void main(String[] args) {
+        Cars a;
+        a=new BMW();
+        a.sound();
+        a=new Audi();
+        a.sound();
+        a=new Benz();
+        a.sound();
+         }  
+}
+output:
+BMW
+Audi
+Benz
+
+code2:
+class grandparents {
+    void sound(){
+        System.out.println("grandparent");
+    }
+}
+class grandfather extends grandparents{
+     void sound(){
+        System.out.println("narayanan");
+     }
+}
+class grandmother  extends grandparents{
+     void sound(){
+        System.out.println("kalaiselvi");
+     }
+}
+class father extends grandparents{
+     void sound(){
+        System.out.println("saravanan");
+     }
+}
+class mother extends grandparents{
+     void sound(){
+        System.out.println("chandra");
+     }
+}
+
+
+class Main {
+    public static void main(String[] args) {
+        grandparents a;
+        a=new grandfather();
+        a.sound();
+        a=new grandmother();
+        a.sound();
+        a=new father();
+        a.sound();
+        a=new mother();
+        a.sound();
+        
+        
+    }  
+}
+output:
+narayanan
+kalaiselvi
+saravanan
+chandra
