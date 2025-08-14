@@ -143,3 +143,30 @@ nayarayanan
 kalaiselvi
 saravanan
 chandra
+code 4:
+class Father {
+    void sound() {
+        System.out.println("Saravanan");
+    }
+}
+
+class Mother {
+    void sound() {
+        System.out.println("Saravanan's wife");
+    }
+}
+
+class Son extends Father {
+    void sound() {
+        System.out.println("magesh");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Father a = new Son();
+        a.sound();  
+    }
+}
+output:
+
