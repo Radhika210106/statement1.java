@@ -262,6 +262,38 @@ thaatha
 cousin
 thaatha
 my self radhuu
+code 8:
+interface Grandparents {
+    void grandparentInfo();
+}
+
+interface Parents {
+    void parentInfo();
+}
+
+class Child implements Grandparents, Parents {
+    public void grandparentInfo() {
+        System.out.println("I am from the grandparents.");
+    }
+    public void parentInfo() {
+        System.out.println("I am from the parents.");
+    }
+    void childInfo() {
+        System.out.println("I am the child.");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Child obj = new Child();
+        obj.grandparentInfo();
+        obj.parentInfo();
+        obj.childInfo();
+    }
+}
+output:
+I am from the grandparents.
+I am from the parents.
+I am the child.
 
 
 
