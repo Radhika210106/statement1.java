@@ -169,4 +169,34 @@ public class Main {
     }
 }
 output:
+magesh
+code 5:
+class Vehicle {
+    Vehicle() {
+        System.out.println("this is wheeler");
+    }
+}
+
+class Fourwheeler extends Vehicle {
+    Fourwheeler() {
+        System.out.println("this is fourwheeler");
+    }
+}
+
+class Car extends Fourwheeler {
+   Car() {
+        System.out.println("this is car");
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        Car obj=new Car();
+    }
+}
+output:
+this is wheeler
+this is fourwheeler
+this is car
 
