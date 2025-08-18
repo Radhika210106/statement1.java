@@ -56,3 +56,48 @@ class Main {
 output:
 9
 11.690000000000001
+code 3:
+class Payment {
+    public void pay() {
+        System.out.println("payment credited");
+    }
+}
+
+class Upi extends Payment {
+    @Override
+    public void pay() {
+        System.out.println("payment credited using upi");   
+    }
+}
+
+class BankTransfer extends Payment {
+    @Override
+    public void pay() {
+        System.out.println("banktransaction");
+    }
+}
+
+class CreditCard extends Payment {
+    @Override
+    public void pay() {
+        System.out.println("credit card method");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Payment v = new Upi();
+        v.pay();  
+
+        Payment a = new BankTransfer();
+        a.pay();  
+
+        Payment b = new CreditCard();
+        b.pay();  
+    }
+}
+output:
+payment credited using upi
+banktransaction
+credit card method
+
