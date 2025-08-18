@@ -1,0 +1,58 @@
+code 1:
+class Vehicle {
+    public void drive() {
+        System.out.println("drive");
+    }
+}
+
+class Bike extends Vehicle {
+    @Override
+    public void drive() {
+        System.out.println("driving bike");
+    }
+}
+
+class Car extends Vehicle {
+    @Override
+    public void drive() {
+        System.out.println("driving car");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle v = new Bike();
+        v.drive();  
+
+        Vehicle a = new Car();
+        a.drive();  
+
+        Vehicle b = new Vehicle();
+        b.drive();  
+    }
+}
+output:
+driving bike
+driving car
+drive
+code 2:
+class Main {
+   
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public double add(double a, double b, double c) {
+        return a + b + c;
+    }
+
+    public static void main(String[] args) {
+        Main obj = new Main();
+
+        System.out.println(obj.add(4, 5));
+        System.out.println(obj.add(2.4, 3.14, 6.15));
+    }
+}
+output:
+9
+11.690000000000001
